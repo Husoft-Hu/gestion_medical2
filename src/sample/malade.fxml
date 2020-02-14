@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="768.0" style="-fx-background-color: #005580;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="164.0" layoutY="46.0" prefHeight="41.0" prefWidth="421.0" text="les informations du malade " textFill="#fffdfd">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="30.0" />
+         </font>
+      </Label>
+      <TabPane layoutY="115.0" prefHeight="432.0" prefWidth="768.0" style="-fx-background-color: #00ccff;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Informations personnel ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="756.0" style="-fx-background-color: #005580;">
+                     <children>
+                        <Label layoutX="28.0" layoutY="63.0" prefHeight="24.0" prefWidth="60.0" text="Nom :" textFill="#f2eded">
+                           <font>
+                              <Font name="Berlin Sans FB Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="28.0" layoutY="189.0" prefHeight="24.0" prefWidth="142.0" text="Num_Assurance" textFill="#f2eded">
+                           <font>
+                              <Font name="Berlin Sans FB Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="28.0" layoutY="127.0" prefHeight="24.0" prefWidth="75.0" text="Prénom :" textFill="#f2eded">
+                           <font>
+                              <Font name="Berlin Sans FB Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="169.0" layoutY="61.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="300.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5px;" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="169.0" layoutY="122.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="300.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5px;" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="169.0" layoutY="184.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="300.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5px;" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Liste des consultations ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #008fb3;">
+                     <children>
+                        <TableView layoutX="19.0" layoutY="14.0" prefHeight="343.0" prefWidth="730.0">
+                          <columns>
+                            <TableColumn prefWidth="86.0" text="Numéro" />
+                            <TableColumn prefWidth="117.0" text="Date" />
+                              <TableColumn prefWidth="148.0" text="Num_ordonance" />
+                              <TableColumn prefWidth="145.0" text="liste_medicaments" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
